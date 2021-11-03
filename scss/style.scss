@@ -1,0 +1,82 @@
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$Tertiary-color: #99E2D0;
+@mixin shadow {
+    box-shadow: 0px 10px 10px ($primary-color, 36%) ;
+}
+
+
+body{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0%;
+    margin: 0%;
+}
+header{
+    h1{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        padding-top: 5%;
+    }
+}
+.under-header{
+    display: flex;
+    flex-direction: column;
+
+    &__city{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: baseline;
+        justify-content: center;
+        width: 100%;
+        background: lighten($primary-color, 36%);
+        @include shadow;
+    }
+}
+.block-under-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 5%;
+    background: lighten($secondary-color, 24.5%);
+    p, h2{
+        width: 80%;
+        display: flex;
+        text-align: center;
+    }
+    .btn-primary{
+        width: 50%;
+        display: flex
+    }
+}
+
+.section-restaurants{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: lighten($secondary-color, 24.5%);
+    article{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        
+        figure{
+            @include shadow;
+            figcaption{
+            h3{width: 100%;}
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            }            
+        }
+        img{
+            width: 100%;
+            border-radius: 15px 15px 0px 0px;
+            max-height: 200px;
+        object-fit: cover;
+        }     
+    }   
+}

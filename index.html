@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="scss/style.css">
     <title>ohmyfood</title>
 </head>
 <body>
@@ -12,17 +13,17 @@
         <h1><img src="./images/ohmyfood@2x.svg" alt="Logo"></h1>
     </header>
     <main>
-        <section>
+        <section class="under-header">
 
-            <div>
+            <div class="under-header__city">
                 <i class="fas fa-map-marker-alt"></i>
                 <h4>Paris, Belleville</h4>
             </div>
 
-            <div>
+            <div class="block-under-header">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-                <button>Explorer nos restaurants</button>
+                <button class="btn-primary">Explorer nos restaurants</button>
             </div>
 
         </section>
@@ -30,13 +31,13 @@
         <nav>
             <h2>Fonctionnement</h2>
             <ul>
-                <li><button><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button></li>
-                <li><button><span>2</span><i class="fas fa-list-ul"></i>Composez votre menu</button></li>
-                <li><button><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</button></li>
+                <li><button class="btn-secondary"><span>1</span><i class="fas fa-mobile-alt"></i>Choisissez un restaurant</button></li>
+                <li><button class="btn-secondary"><span>2</span><i class="fas fa-list-ul"></i>Composez votre menu</button></li>
+                <li><button class="btn-secondary"><span>3</span><i class="fas fa-store"></i>Dégustez au restaurant</button></li>
             </ul>
         </nav>
 
-        <section>
+        <section class="section-restaurants">
             <h2>Restaurants</h2>
             <article>
                 <a href="menu_resto_1.html">
