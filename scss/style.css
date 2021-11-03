@@ -18,7 +18,17 @@ header h1 {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  padding-top: 5%;
+}
+
+.header-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .under-header {
@@ -47,8 +57,8 @@ header h1 {
           justify-content: center;
   width: 100%;
   background: #f4eefc;
-  -webkit-box-shadow: 0px 10px 10px #9356DC, 36%;
-          box-shadow: 0px 10px 10px #9356DC, 36%;
+  -webkit-box-shadow: 0px 10px 10px #9356DC;
+          box-shadow: 0px 10px 10px #9356DC;
 }
 
 .block-under-header {
@@ -82,6 +92,55 @@ header h1 {
   display: flex;
 }
 
+.under-header-menu {
+  width: 100%;
+  background: #fff6fd;
+}
+
+.under-header-menu figure {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin: 0%;
+  position: relative;
+}
+
+.under-header-menu figure img {
+  width: 100%;
+  max-height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.under-header-menu figure figcaption {
+  border-radius: 15px 15px 0px 0px;
+  background: #fff6fd;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+  top: -30px;
+}
+
+.main-menu {
+  background: #fff6fd;
+}
+
 .section-restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -106,8 +165,8 @@ header h1 {
 }
 
 .section-restaurants article figure {
-  -webkit-box-shadow: 0px 10px 10px #9356DC, 36%;
-          box-shadow: 0px 10px 10px #9356DC, 36%;
+  -webkit-box-shadow: 0px 10px 10px #9356DC;
+          box-shadow: 0px 10px 10px #9356DC;
 }
 
 .section-restaurants article figure figcaption {
@@ -133,5 +192,79 @@ header h1 {
   max-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.section-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-menu h3 {
+  width: 90%;
+}
+
+.section-menu section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-menu section article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 95%;
+  margin: 2%;
+  padding: 1%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 10px 10px #9356DC;
+          box-shadow: 0px 10px 10px #9356DC;
+}
+
+.section-menu section article h4 {
+  width: 80%;
+  padding: 3% 5% 0% 5%;
+  margin: 0%;
+}
+
+.section-menu section article div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0% 5% 3% 5%;
+}
+
+.section-menu section article div p {
+  margin: 0%;
+}
+
+.section-menu section article .fa-check-circle {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

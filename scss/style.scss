@@ -1,8 +1,13 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $Tertiary-color: #99E2D0;
-@mixin shadow {
-    box-shadow: 0px 10px 10px ($primary-color, 36%) ;
+@mixin shadow{
+    box-shadow: 0px 10px 10px ($primary-color) ;
+}
+@mixin card{
+    background-color: #ffffff;
+    border-radius: 15px;
+
 }
 
 
@@ -18,8 +23,12 @@ header{
         width: 100%;
         display: flex;
         justify-content: space-around;
-        padding-top: 5%;
     }
+}
+.header-menu{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 .under-header{
     display: flex;
@@ -52,7 +61,36 @@ header{
         display: flex
     }
 }
-
+.under-header-menu{
+    width: 100%;
+    background: lighten($secondary-color, 24.5%);
+    figure{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0%;
+        position: relative;
+        img{
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        }
+        figcaption{
+           border-radius: 15px 15px 0px 0px;
+           background: lighten($secondary-color, 24.5%);
+           width: 100%;
+           height: auto;
+           display: flex;
+           flex-direction: row;
+           align-items: baseline;
+           justify-content: space-around;
+           position: relative;
+           top: -30px;
+        }
+    }
+}
+.main-menu{
+    background: lighten($secondary-color, 24.5%)
+}
 .section-restaurants{
     display: flex;
     flex-direction: column;
@@ -76,7 +114,50 @@ header{
             width: 100%;
             border-radius: 15px 15px 0px 0px;
             max-height: 200px;
-        object-fit: cover;
+            object-fit: cover;
         }     
     }   
+}
+.section-menu{
+    display: flex;
+   flex-direction: column;
+
+
+    h3{ 
+        width: 90%;
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        article{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 95%;
+            margin: 2%;
+            padding: 1%;
+            @include card;
+            @include shadow;
+
+            h4{
+                width: 80%;
+                padding: 3% 5% 0% 5%;
+                margin: 0%;
+            }
+            div{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: baseline;
+                justify-content: space-between;
+                padding: 0% 5% 3% 5%;
+                p{
+                    margin: 0%
+                }
+            }
+            .fa-check-circle{
+                display:none;
+            }
+        }
+    }
+   
 }
