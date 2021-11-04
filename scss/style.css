@@ -11,6 +11,19 @@ body {
   margin: 0%;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #9356DC;
+}
+
+li {
+  list-style-type: none;
+}
+
 header h1 {
   width: 100%;
   display: -webkit-box;
@@ -141,6 +154,10 @@ header h1 {
   background: #fff6fd;
 }
 
+nav h2 {
+  margin: 5%;
+}
+
 .section-restaurants {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -151,6 +168,10 @@ header h1 {
           flex-direction: column;
   position: relative;
   background: #fff6fd;
+}
+
+.section-restaurants h2 {
+  margin: 5%;
 }
 
 .section-restaurants article {
@@ -167,6 +188,9 @@ header h1 {
 .section-restaurants article figure {
   -webkit-box-shadow: 0px 10px 10px #9356DC;
           box-shadow: 0px 10px 10px #9356DC;
+  background-color: #ffffff;
+  border-radius: 15px;
+  margin: 0% 5% 20% 5%;
 }
 
 .section-restaurants article figure figcaption {
@@ -180,10 +204,17 @@ header h1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0% 5% 0% 5%;
 }
 
 .section-restaurants article figure figcaption h3 {
-  width: 100%;
+  width: 70%;
+  margin: 0%;
+}
+
+.section-restaurants article figure figcaption p {
+  width: 60%;
+  margin: 1% 0% 5% 0%;
 }
 
 .section-restaurants article img {
@@ -266,5 +297,32 @@ header h1 {
 
 .section-menu section article .fa-check-circle {
   display: none;
+}
+
+footer {
+  background-color: #c9abee;
+}
+
+footer h3 {
+  margin: 5% 0% 5% 5%;
+}
+
+footer h3 .white_filter {
+  -webkit-filter: invert(1) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(150%) contrast(150%);
+          filter: invert(1) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(150%) contrast(150%);
+  width: 33%;
+}
+
+footer ul {
+  padding: 0%;
+  margin: 0% 0% 5% 5%;
+}
+
+footer ul li {
+  padding: 2% 0% 2% 0%;
+}
+
+footer ul li a {
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
