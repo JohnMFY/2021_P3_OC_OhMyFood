@@ -1,15 +1,7 @@
-$primary-color: #9356DC;
-$secondary-color: #FF79DA;
-$Tertiary-color: #99E2D0;
-@mixin shadow{
-    box-shadow: 0px 10px 10px ($primary-color) ;
-}
-@mixin card{
-    background-color: #ffffff;
-    border-radius: 15px;
-
-}
-
+@import "./variable";
+@import "./mixin";
+@import "./btn";
+@import "./typo";
 
 body{
     display: flex;
@@ -68,15 +60,13 @@ header{
     width: 100%;
     padding-bottom: 5%;
     background: lighten($secondary-color, 24.5%);
+    
     p, h2{
         width: 80%;
         display: flex;
         text-align: center;
     }
-    .btn-primary{
-        width: 50%;
-        display: flex
-    }
+ 
 }
 
 
