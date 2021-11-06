@@ -105,7 +105,10 @@ header{
 
 nav{
     h2{
-        margin: 5%;
+        padding: 5%;
+    } 
+    ul{
+        padding-left: 8%;
     }
 }
 
@@ -194,7 +197,7 @@ nav{
 
 
 footer{
-    background-color: lighten($primary-color, 20%);  
+    background-color: $secondary-color;
     h3{
         margin:5% 0% 5% 5%;
         .white_filter{
