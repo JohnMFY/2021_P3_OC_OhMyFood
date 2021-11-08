@@ -33,8 +33,12 @@ header{
 
 .header-menu{
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: space-around;
+    h1{
+        width: 50%;
+        margin-right: 20%;
+    }
 }
 
 
@@ -63,7 +67,6 @@ header{
     align-items: center;
     text-align: center;
     width: 100%;
-    padding-bottom: 5%;
     background: lighten($secondary-color, 24%);
     
     h2, p{
@@ -87,7 +90,7 @@ header{
         object-fit: cover;
         }
         figcaption{
-           border-radius: 15px 15px 0px 0px;
+           border-radius: 30px 30px 0px 0px;
            background: lighten($secondary-color, 24.5%);
            width: 100%;
            height: auto;
@@ -134,11 +137,10 @@ nav{
             figure{
                 @include shadow;
                 @include card;
-                display: flex;
-                flex-flow: column wrap;
-                justify-content: space-around;
                 margin: 0% 3% 10% 3%;
+
                 figcaption{
+                    position: relative;
                     display: flex;
                     flex-flow: row wrap;
                     justify-content: space-between;
@@ -146,13 +148,14 @@ nav{
 
                     h3{
                         width: 70%;
-                    margin-bottom: 0%;
+                        margin-bottom: 0%;
                     }
                     p{
                         width: 60%;
                         margin: 1% 0% 5% 0% ;
-                    }  
-                }            
+                    } 
+                    
+                } 
             }
 
             img{
@@ -168,9 +171,6 @@ nav{
 .section-menu{
     display: flex;
    flex-direction: column;
-    h3{ 
-        width: 90%;
-    }
     section{
         display: flex;
         flex-direction: column;
@@ -184,11 +184,6 @@ nav{
             @include card;
             @include shadow;
 
-            h4{
-                width: 80%;
-                padding: 3% 5% 0% 5%;
-                margin: 0%;
-            }
             div{
                 display: flex;
                 flex-flow: row nowrap;
@@ -196,14 +191,17 @@ nav{
                 justify-content: space-between;
                 padding: 0% 5% 3% 5%;
                 p{
-                    margin: 0%
+                    margin: 0%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
                 }
             }
             .fa-check-circle{
                 display:none;
             }
         }
-    }   
+    }
 }
 
 

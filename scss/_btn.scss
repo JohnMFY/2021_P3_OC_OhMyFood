@@ -1,11 +1,14 @@
 .btn-primary{
     @include btn-primary;
 }
+.btn-primary:active{
+    background-image: linear-gradient(to right, $secondary-color, $primary-color);
+}
+
 .btn-secondary{
     @include btn-secondary;
 }
-
-.btn-secondary:hover{
+.btn-secondary:active{
     background-color: lighten($primary-color, 35%);
     .fas{
         color: $primary-color;

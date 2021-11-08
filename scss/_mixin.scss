@@ -8,14 +8,17 @@
 }
 
 @mixin btn-primary {
-    background-color:$secondary-color;
-    border-color:$secondary-color;
+    background-image: linear-gradient(to bottom, $secondary-color, $primary-color);
     border-style: none;
     color: #ffff;
-    padding: 4%;
-    margin: 10% 0% 5% 0%;
+    padding: 4% 10% 4% 10%;
+    margin: 10% 0% 20% 0%;
     border-radius: 30px;
     @include shadow;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+    flex-flow: row nowrap;
 }
 
 @mixin btn-secondary {

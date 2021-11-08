@@ -1,14 +1,37 @@
 .btn-primary, .btn-secondary{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto';
     font-weight: bold;
     font-size: medium;
 }
-h1{
-    font-family: 'shrikland';
+main{
+   h2, h3{
+    font-weight: 700;
+    } 
 }
-h2, h3{
-    font-weight: 800;
+
+.under-header-menu{
+    h2{
+        font-family: 'Shrikhand';
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 0%;
+    }   
 }
+.section-menu{
+    h3{
+        font-weight: 300;
+        margin: 15% 0% 5% 4%;
+        border-bottom: 2px solid $tertiary-color;
+        width: 10%;
+        text-transform: uppercase;
+    }
+    h4{
+        width: 80%;
+        padding: 3% 5% 0% 5%;
+        margin: 0%;
+    }
+}
+
 h4{
     margin: 3.5% 0% 3.5% 0%;
 }
