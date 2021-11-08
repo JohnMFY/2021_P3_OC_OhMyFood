@@ -9,6 +9,7 @@ body{
     width: 100%;
     padding: 0%;
     margin: 0%;
+    font-family:'roboto', Arial, Helvetica, sans-serif;
 }
 a{
     text-decoration: none;
@@ -47,8 +48,11 @@ header{
         align-items: baseline;
         justify-content: center;
         width: 100%;
-        background: lighten($primary-color, 36%);
-        @include shadow;
+        background: lighten($monochrome, 90%);
+        box-shadow: -2px 4px 10px $monochrome;
+        .fas{
+            padding-right: 5%;
+        }
     }
 }
 
@@ -57,22 +61,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 100%;
     padding-bottom: 5%;
-    background: lighten($secondary-color, 24.5%);
+    background: lighten($secondary-color, 24%);
     
-    p, h2{
+    h2, p{
         width: 80%;
-        display: flex;
-        text-align: center;
+        margin-bottom: 0%;
     }
- 
 }
 
 
 .under-header-menu{
     width: 100%;
-    background: lighten($secondary-color, 24.5%);
+    background: lighten($secondary-color, 24%);
     figure{
         display: flex;
         flex-flow: row wrap;
@@ -106,9 +109,9 @@ header{
 nav{
     h2{
         padding: 5%;
-    } 
+    }
     ul{
-        padding-left: 8%;
+        padding: 0% 5% 0% 10%;
     }
 }
 
@@ -118,6 +121,8 @@ nav{
     flex-direction: column;
     position: relative;
     background: lighten($secondary-color, 24.5%);
+    padding: 10% 0% 0% 0%;
+
     h2{
         margin: 5%;
     }
@@ -125,31 +130,37 @@ nav{
         width: 100%;
         display: flex;
         flex-flow: column wrap;
-        figure{
-            @include shadow;
-            @include card;
-            margin: 0% 5% 20% 5%;
-            figcaption{
-            h3{
-                width: 70%;
-                margin: 0%;
+
+            figure{
+                @include shadow;
+                @include card;
+                display: flex;
+                flex-flow: column wrap;
+                justify-content: space-around;
+                margin: 0% 3% 10% 3%;
+                figcaption{
+                    display: flex;
+                    flex-flow: row wrap;
+                    justify-content: space-between;
+                    margin: 0% 5% 0% 5%;
+
+                    h3{
+                        width: 70%;
+                    margin-bottom: 0%;
+                    }
+                    p{
+                        width: 60%;
+                        margin: 1% 0% 5% 0% ;
+                    }  
+                }            
             }
-            p{
-                width: 60%;
-                margin: 1% 0% 5% 0% ;
-            }
-            display: flex;
-            flex-flow: row wrap;
-            justify-content: space-between;
-            margin: 0% 5% 0% 5%; 
-            }            
-        }
-        img{
-            width: 100%;
-            border-radius: 15px 15px 0px 0px;
-            max-height: 200px;
-            object-fit:cover;
-        }     
+
+            img{
+                width: 100%;
+                border-radius: 15px 15px 0px 0px;
+                max-height: 200px;
+                object-fit:cover;
+            }             
     }   
 }
 
@@ -197,7 +208,7 @@ nav{
 
 
 footer{
-    background-color: $secondary-color;
+    background-color: lighten($monochrome, 20%);
     h3{
         margin:5% 0% 5% 5%;
         .white_filter{
@@ -210,7 +221,11 @@ footer{
         margin: 0% 0% 5% 5%;
         li{
             padding: 2% 0% 2% 0%;
-            a{color: #ffffff;
+            .fas{
+                margin-right: 3%;
+            }
+            a{
+                color: #ffffff;
             }            
         }
     }  

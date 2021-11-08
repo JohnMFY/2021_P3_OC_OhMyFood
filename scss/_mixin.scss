@@ -1,5 +1,5 @@
 @mixin shadow{
-    box-shadow: -2px 4px 10px lighten($secondary-color, 0%);
+    box-shadow: -2px 4px 10px lighten($monochrome, 85%);
 }
 
 @mixin card{
@@ -13,6 +13,7 @@
     border-style: none;
     color: #ffff;
     padding: 4%;
+    margin: 10% 0% 5% 0%;
     border-radius: 30px;
     @include shadow;
 }
@@ -21,9 +22,26 @@
     background-color: lighten($secondary-color, 25%);
     border-color: lighten($secondary-color,30%);
     border-style: none;
+    display: flex;
+    align-items: center;
+    position: relative;
     padding: 5%;
     margin-bottom: 10%;
     width: 90%;
     border-radius: 15px;
     @include shadow;
+    span{
+        background-color: $primary-color;
+        padding: 2% 3.4%;
+        border-radius: 50%;
+        position: relative;
+        right: 10%;
+        color: white;
+        font-weight: 400;
+        font-size: small;
+    }
+    .fas{
+        padding-right: 7%;
+        color: lighten($monochrome, 50%);
+    }
 }

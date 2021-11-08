@@ -4,21 +4,16 @@
   border-style: none;
   color: #ffff;
   padding: 4%;
+  margin: 10% 0% 5% 0%;
   border-radius: 30px;
-  -webkit-box-shadow: -2px 4px 10px #ff79da;
-          box-shadow: -2px 4px 10px #ff79da;
+  -webkit-box-shadow: -2px 4px 10px #d9d9d9;
+          box-shadow: -2px 4px 10px #d9d9d9;
 }
 
 .btn-secondary {
   background-color: #fff9fd;
   border-color: white;
   border-style: none;
-  padding: 5%;
-  margin-bottom: 10%;
-  width: 90%;
-  border-radius: 15px;
-  -webkit-box-shadow: -2px 4px 10px #ff79da;
-          box-shadow: -2px 4px 10px #ff79da;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -26,6 +21,12 @@
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  padding: 5%;
+  margin-bottom: 10%;
+  width: 90%;
+  border-radius: 15px;
+  -webkit-box-shadow: -2px 4px 10px #d9d9d9;
+          box-shadow: -2px 4px 10px #d9d9d9;
 }
 
 .btn-secondary span {
@@ -41,16 +42,33 @@
 
 .btn-secondary .fas {
   padding-right: 7%;
+  color: gray;
+}
+
+.btn-secondary:hover {
+  background-color: #f2eafb;
+}
+
+.btn-secondary:hover .fas {
+  color: #9356DC;
 }
 
 .btn-primary, .btn-secondary {
   font-family: 'Roboto', sans-serif;
   font-weight: bold;
-  font-size: small;
+  font-size: medium;
 }
 
-h1, h2, h3 {
-  font-family: 'Shrikhand';
+h1 {
+  font-family: 'shrikland';
+}
+
+h2, h3 {
+  font-weight: 800;
+}
+
+h4 {
+  margin: 3.5% 0% 3.5% 0%;
 }
 
 body {
@@ -64,6 +82,7 @@ body {
   width: 100%;
   padding: 0%;
   margin: 0%;
+  font-family: 'roboto', Arial, Helvetica, sans-serif;
 }
 
 a {
@@ -124,9 +143,13 @@ header h1 {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background: #f4eefc;
-  -webkit-box-shadow: -2px 4px 10px #ff79da;
-          box-shadow: -2px 4px 10px #ff79da;
+  background: #e6e6e6;
+  -webkit-box-shadow: -2px 4px 10px black;
+          box-shadow: -2px 4px 10px black;
+}
+
+.under-header__city .fas {
+  padding-right: 5%;
 }
 
 .block-under-header {
@@ -140,22 +163,20 @@ header h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
   width: 100%;
   padding-bottom: 5%;
-  background: #fff6fd;
+  background: #fff3fc;
 }
 
-.block-under-header p, .block-under-header h2 {
+.block-under-header h2, .block-under-header p {
   width: 80%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: center;
+  margin-bottom: 0%;
 }
 
 .under-header-menu {
   width: 100%;
-  background: #fff6fd;
+  background: #fff3fc;
 }
 
 .under-header-menu figure {
@@ -207,7 +228,7 @@ nav h2 {
 }
 
 nav ul {
-  padding-left: 8%;
+  padding: 0% 5% 0% 10%;
 }
 
 .section-restaurants {
@@ -220,6 +241,7 @@ nav ul {
           flex-direction: column;
   position: relative;
   background: #fff6fd;
+  padding: 10% 0% 0% 0%;
 }
 
 .section-restaurants h2 {
@@ -238,11 +260,20 @@ nav ul {
 }
 
 .section-restaurants article figure {
-  -webkit-box-shadow: -2px 4px 10px #ff79da;
-          box-shadow: -2px 4px 10px #ff79da;
+  -webkit-box-shadow: -2px 4px 10px #d9d9d9;
+          box-shadow: -2px 4px 10px #d9d9d9;
   background-color: #ffffff;
   border-radius: 15px;
-  margin: 0% 5% 20% 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0% 3% 10% 3%;
 }
 
 .section-restaurants article figure figcaption {
@@ -261,7 +292,7 @@ nav ul {
 
 .section-restaurants article figure figcaption h3 {
   width: 70%;
-  margin: 0%;
+  margin-bottom: 0%;
 }
 
 .section-restaurants article figure figcaption p {
@@ -316,8 +347,8 @@ nav ul {
   padding: 1%;
   background-color: #ffffff;
   border-radius: 15px;
-  -webkit-box-shadow: -2px 4px 10px #ff79da;
-          box-shadow: -2px 4px 10px #ff79da;
+  -webkit-box-shadow: -2px 4px 10px #d9d9d9;
+          box-shadow: -2px 4px 10px #d9d9d9;
 }
 
 .section-menu section article h4 {
@@ -352,7 +383,7 @@ nav ul {
 }
 
 footer {
-  background-color: #FF79DA;
+  background-color: #333333;
 }
 
 footer h3 {
@@ -372,6 +403,10 @@ footer ul {
 
 footer ul li {
   padding: 2% 0% 2% 0%;
+}
+
+footer ul li .fas {
+  margin-right: 3%;
 }
 
 footer ul li a {
