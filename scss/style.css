@@ -109,6 +109,10 @@ main h2, main h3 {
   font-weight: 900;
 }
 
+.section-restaurants h2 {
+  margin: 5%;
+}
+
 .under-header-menu h2 {
   font-family: 'Shrikhand';
   font-size: 28px;
@@ -283,10 +287,6 @@ nav ul {
   padding: 10% 0% 0% 0%;
 }
 
-.section-restaurants h2 {
-  margin: 5% 0% 0% 5%;
-}
-
 .section-restaurants article {
   width: 100%;
   display: -webkit-box;
@@ -300,25 +300,26 @@ nav ul {
 
 .section-restaurants article h4 {
   position: relative;
-  left: 70%;
-  top: 50px;
+  bottom: 200px;
   color: #278870;
   background-color: #99E2D0;
-  width: 17%;
-  padding: 2% 4% 2% 4%;
-  border-radius: 3px;
-  margin: 0%;
+  width: 20%;
+  padding: 2%;
 }
 
-.section-restaurants article figure {
+.section-restaurants article a {
+  display: inline-block;
+}
+
+.section-restaurants article a figure {
   -webkit-box-shadow: -2px 4px 10px #d9d9d9;
           box-shadow: -2px 4px 10px #d9d9d9;
   background-color: #ffffff;
   border-radius: 15px;
-  margin: 0% 3% 10% 3%;
+  margin: 0% 3% 20% 3%;
 }
 
-.section-restaurants article figure figcaption {
+.section-restaurants article a figure figcaption {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -332,17 +333,17 @@ nav ul {
   margin: 0% 5% 0% 5%;
 }
 
-.section-restaurants article figure figcaption h3 {
+.section-restaurants article a figure figcaption h3 {
   width: 70%;
   margin-bottom: 0%;
 }
 
-.section-restaurants article figure figcaption p {
+.section-restaurants article a figure figcaption p {
   width: 60%;
   margin: 1% 0% 5% 0%;
 }
 
-.section-restaurants article figure figcaption .fas {
+.section-restaurants article a figure figcaption .fas {
   display: none;
 }
 

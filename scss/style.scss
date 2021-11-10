@@ -6,6 +6,7 @@
 @import "./base/base";
 @import "./base/typo";
 
+//penser a utiliser un svg pour coeur
 
 header{
     h1{
@@ -109,10 +110,6 @@ nav{
     flex-direction: column;
     background: lighten($secondary-color, 24.5%);
     padding: 10% 0% 0% 0%;
-
-    h2{
-        margin: 5% 0% 0% 5%;
-    }
     
     article{
         width: 100%;
@@ -121,38 +118,39 @@ nav{
 
             h4{
                 position: relative;
-                left: 70%; top: 50px; 
+                bottom: 200px; 
                 color: darken($tertiary-color, 40%);
                 background-color: $tertiary-color;
-                width: 17%;
-                padding: 2% 4% 2% 4%;
-                border-radius: 3px;
-                margin: 0%
+                width: 20%;
+                padding: 2%;
             }
+            a{
+                display: inline-block;
 
-            figure{
-                @include shadow;
-                @include card;
-                margin: 0% 3% 10% 3%;
+                figure{
+                    @include shadow;
+                    @include card;
+                    margin: 0% 3% 20% 3%;
+                    //a à tester en flex ou mettre lien en block et enlever flex flow pour voir sans contrainte flex
+                    figcaption{
+                        display: flex;
+                        flex-flow: row wrap;
+                        justify-content: space-between;
+                        margin: 0% 5% 0% 5%;
 
-                figcaption{
-                    display: flex;
-                    flex-flow: row wrap;
-                    justify-content: space-between;
-                    margin: 0% 5% 0% 5%;
-
-                    h3{
-                        width: 70%;
-                        margin-bottom: 0%;
+                        h3{
+                            width: 70%;
+                            margin-bottom: 0%;
+                        }
+                        p{
+                            width: 60%;
+                            margin: 1% 0% 5% 0% ;
+                        }
+                        .fas{
+                            display: none;
+                        }                                    
                     }
-                    p{
-                        width: 60%;
-                        margin: 1% 0% 5% 0% ;
-                    }
-                    .fas{
-                        display: none;
-                    }                                    
-                } 
+                }     
             }
 
             img{
