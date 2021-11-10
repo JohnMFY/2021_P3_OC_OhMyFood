@@ -118,11 +118,13 @@ nav{
 
             h4{
                 position: relative;
-                bottom: 200px; 
+                bottom: 190px; 
                 color: darken($tertiary-color, 40%);
                 background-color: $tertiary-color;
                 width: 20%;
                 padding: 2%;
+                margin: auto;
+                text-align: center;
             }
             a{
                 display: inline-block;

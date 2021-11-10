@@ -300,11 +300,13 @@ nav ul {
 
 .section-restaurants article h4 {
   position: relative;
-  bottom: 200px;
+  bottom: 190px;
   color: #278870;
   background-color: #99E2D0;
   width: 20%;
   padding: 2%;
+  margin: auto;
+  text-align: center;
 }
 
 .section-restaurants article a {
