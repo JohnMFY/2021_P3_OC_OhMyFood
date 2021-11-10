@@ -114,7 +114,7 @@ nav{
     article{
         width: 100%;
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: column nowrap;
 
             h4{
                 position: relative;
@@ -130,7 +130,7 @@ nav{
                 figure{
                     @include shadow;
                     @include card;
-                    margin: 0% 3% 20% 3%;
+                    margin: 0% 3% 10% 3%;
                     //a à tester en flex ou mettre lien en block et enlever flex flow pour voir sans contrainte flex
                     figcaption{
                         display: flex;

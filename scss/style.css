@@ -294,8 +294,8 @@ nav ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
 }
 
 .section-restaurants article h4 {
@@ -316,7 +316,7 @@ nav ul {
           box-shadow: -2px 4px 10px #d9d9d9;
   background-color: #ffffff;
   border-radius: 15px;
-  margin: 0% 3% 20% 3%;
+  margin: 0% 3% 10% 3%;
 }
 
 .section-restaurants article a figure figcaption {
