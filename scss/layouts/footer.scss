@@ -1,0 +1,23 @@
+footer{
+    background-color: lighten($monochrome, 20%);
+    h3{
+        margin:5% 0% 5% 5%;
+        .white_filter{
+            filter:invert(1) sepia(0%) saturate(0%) hue-rotate(180deg) brightness(150%) contrast(150%);
+            width:  33%;
+        }      
+    }
+    ul{
+        padding: 0%;
+        margin: 0% 0% 5% 5%;
+        li{
+            padding: 2% 0% 2% 0%;
+            .fas{
+                margin-right: 3%;
+            }
+            a{
+                color: #ffffff;
+            }            
+        }
+    }  
+}

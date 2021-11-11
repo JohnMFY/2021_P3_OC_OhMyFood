@@ -1,0 +1,67 @@
+.under-header-menu{
+    width: 100%;
+    background: lighten($secondary-color, 24%);
+    figure{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 0%;
+        position: relative;
+        img{
+        width: 100%;
+        max-height: 250px;
+        object-fit: cover;
+        }
+        figcaption{
+           border-radius: 30px 30px 0px 0px;
+           background: lighten($secondary-color, 24.5%);
+           width: 100%;
+           height: auto;
+           display: flex;
+           flex-direction: row;
+           align-items: baseline;
+           justify-content: space-around;
+           position: relative;
+           top: -30px;
+        }
+    }
+}
+
+.main-menu{
+    background: lighten($secondary-color, 24.5%)
+}
+
+.section-menu{
+    display: flex;
+   flex-direction: column;
+    section{
+        display: flex;
+        flex-direction: column;
+        article{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            width: 95%;
+            margin: 2%;
+            padding: 1%;
+            @include card;
+            @include shadow;
+
+            div{
+                display: flex;
+                flex-flow: row nowrap;
+                align-items: baseline;
+                justify-content: space-between;
+                padding: 0% 5% 3% 5%;
+                p{
+                    margin: 0%;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+            .fa-check-circle{
+                display:none;
+            }
+        }
+    }
+}
