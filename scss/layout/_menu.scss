@@ -1,3 +1,8 @@
+
+.main-menu{
+    background: lighten($secondary-color, 24.5%);
+}
+
 .under-header-menu{
     width: 100%;
     background: lighten($secondary-color, 24%);
@@ -26,10 +31,6 @@
     }
 }
 
-.main-menu{
-    background: lighten($secondary-color, 24.5%)
-}
-
 .section-menu{
     display: flex;
    flex-direction: column;
@@ -46,22 +47,34 @@
             @include card;
             @include shadow;
 
+            .fa-check-circle{
+                display: contents;
+                margin: 30px;
+                color: $tertiary-color;
+                width: 10%;
+            }
             div{
                 display: flex;
                 flex-flow: row nowrap;
-                align-items: baseline;
-                justify-content: space-between;
                 padding: 0% 5% 3% 5%;
+                width: 90%;
                 p{
                     margin: 0%;
                     white-space: nowrap;
                     overflow: hidden;
                     text-overflow: ellipsis;
                 }
-            }
-            .fa-check-circle{
-                display:none;
-            }
+                span{
+                    margin-left: auto;
+                    padding: 0% 5%;
+                }
+
+                .far{
+                    display: contents;
+                    color: $tertiary-color;
+                    background-color: $tertiary-color;
+                }
+            }  
         }
     }
 }
