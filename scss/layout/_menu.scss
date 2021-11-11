@@ -33,48 +33,47 @@
 
 .section-menu{
     display: flex;
-   flex-direction: column;
-    section{
+    flex-flow: column nowrap;
+    width: 100%;
+
+    &__text{
         display: flex;
         flex-direction: column;
-        article{
+        width: 90%;
+        padding: 0% 5%;
+        p{
             display: flex;
-            justify-content: space-around;
-            flex-direction: column;
-            width: 95%;
-            margin: 2%;
-            padding: 1%;
-            @include card;
-            @include shadow;
-
-            .fa-check-circle{
-                display: contents;
-                margin: 30px;
-                color: $tertiary-color;
-                width: 10%;
-            }
-            div{
+            justify-content: space-between;
+            margin: 0%;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            span{
                 display: flex;
                 flex-flow: row nowrap;
-                padding: 0% 5% 3% 5%;
-                width: 90%;
-                p{
-                    margin: 0%;
-                    white-space: nowrap;
-                    overflow: hidden;
-                    text-overflow: ellipsis;
-                }
-                span{
-                    margin-left: auto;
-                    padding: 0% 5%;
-                }
-
-                .far{
-                    display: contents;
-                    color: $tertiary-color;
-                    background-color: $tertiary-color;
-                }
-            }  
+            }
         }
+
+    }
+    &__animation{
+        display: flex;
+        align-self: center;
+        background-color: $tertiary-color;
+        border-radius: 0px 15px 15px 0px;
+        padding: 8%;
+        
+        .fas{
+            color: lighten($monochrome, 100%);
+        }
+    }
+    
+    article{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 95%;
+        margin: 2%;
+        @include card;
+        @include shadow;
     }
 }

@@ -321,11 +321,12 @@ nav ul {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  width: 100%;
 }
 
-.section-menu section {
+.section-menu__text {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -333,35 +334,24 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 90%;
+  padding: 0% 5%;
 }
 
-.section-menu section article {
+.section-menu__text p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 95%;
-  margin: 2%;
-  padding: 1%;
-  background-color: #ffffff;
-  border-radius: 15px;
-  -webkit-box-shadow: -2px 4px 10px #d9d9d9;
-          box-shadow: -2px 4px 10px #d9d9d9;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
-.section-menu section article .fa-check-circle {
-  display: contents;
-  margin: 30px;
-  color: #99E2D0;
-  width: 10%;
-}
-
-.section-menu section article div {
+.section-menu__text p span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,26 +359,39 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: row nowrap;
           flex-flow: row nowrap;
-  padding: 0% 5% 3% 5%;
-  width: 90%;
 }
 
-.section-menu section article div p {
-  margin: 0%;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.section-menu section article div span {
-  margin-left: auto;
-  padding: 0% 5%;
-}
-
-.section-menu section article div .far {
-  display: contents;
-  color: #99E2D0;
+.section-menu__animation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   background-color: #99E2D0;
+  border-radius: 0px 15px 15px 0px;
+  padding: 8%;
+}
+
+.section-menu__animation .fas {
+  color: white;
+}
+
+.section-menu article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 95%;
+  margin: 2%;
+  background-color: #ffffff;
+  border-radius: 15px;
+  -webkit-box-shadow: -2px 4px 10px #d9d9d9;
+          box-shadow: -2px 4px 10px #d9d9d9;
 }
 
 body {
@@ -431,6 +434,10 @@ main h2, main h3 {
   font-weight: 900;
 }
 
+.under-header__city h4 {
+  margin: 3.5% 0% 3.5% 0%;
+}
+
 .section-restaurants h2 {
   margin: 5%;
 }
@@ -451,12 +458,10 @@ main h2, main h3 {
 }
 
 .section-menu h4 {
-  width: 80%;
-  padding: 3% 5% 0% 5%;
-  margin: 0%;
+  margin-bottom: 0%;
 }
 
-h4 {
-  margin: 3.5% 0% 3.5% 0%;
+.section-menu p {
+  margin-top: 2%;
 }
 /*# sourceMappingURL=style.css.map */

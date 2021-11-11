@@ -11,12 +11,18 @@ main{
     font-weight: 900;
     } 
 }
-
+.under-header__city{
+    h4{
+        margin: 3.5% 0% 3.5% 0%;
+    }
+}
 .section-restaurants{
     h2{
         margin: 5%;
     }
 }
+
+
 
 .under-header-menu{
     h2{
@@ -35,12 +41,10 @@ main{
         text-transform: uppercase;
     }
     h4{
-        width: 80%;
-        padding: 3% 5% 0% 5%;
-        margin: 0%;
+        margin-bottom: 0%;
+    }
+    p{
+        margin-top: 2%;
     }
 }
 
-h4{
-    margin: 3.5% 0% 3.5% 0%;
-}
