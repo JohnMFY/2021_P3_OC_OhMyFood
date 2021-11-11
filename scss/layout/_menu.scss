@@ -38,20 +38,24 @@
 
     &__text{
         display: flex;
-        flex-direction: column;
-        width: 90%;
-        padding: 0% 5%;
-        p{
+        flex-flow: column nowrap;
+        padding: 0% 4%;
+        width: 72%;
+        span{
             display: flex;
+            flex-direction: row;
+            align-items: baseline;
             justify-content: space-between;
+            b{
+                width: 10%;
+                padding-left: 4%;
+            }
+        }
+        p{
             margin: 0%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
-            span{
-                display: flex;
-                flex-flow: row nowrap;
-            }
         }
 
     }
@@ -60,7 +64,7 @@
         align-self: center;
         background-color: $tertiary-color;
         border-radius: 0px 15px 15px 0px;
-        padding: 8%;
+        padding: 7% 5%;
         
         .fas{
             color: lighten($monochrome, 100%);
@@ -69,10 +73,10 @@
     
     article{
         display: flex;
-        justify-content: space-around;
         flex-direction: row;
+        justify-content: space-between;
         width: 95%;
-        margin: 2%;
+        margin: 5% auto;
         @include card;
         @include shadow;
     }
