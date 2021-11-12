@@ -71,6 +71,7 @@
         }
     }
     
+    
     article{
         display: flex;
         flex-direction: row;
@@ -79,5 +80,23 @@
         margin: 5% auto;
         @include card;
         @include shadow;
+    }
+}
+
+.section-menu{
+    article:hover{
+        
+        .section-menu__animation{
+                
+                transform-origin:100%;
+                transform: scaleX(0);
+                transition: transform 500ms ease-in-out;
+
+        
+            .fas{
+                transform: rotate(180deg);
+                transition: transform 900ms;
+            }
+        }
     }
 }
