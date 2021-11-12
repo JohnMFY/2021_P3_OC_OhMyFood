@@ -47,7 +47,7 @@
             align-items: baseline;
             justify-content: space-between;
             b{
-                width: 10%;
+                width: 5%;
                 padding-left: 4%;
             }
         }
@@ -64,8 +64,7 @@
         align-self: center;
         background-color: $tertiary-color;
         border-radius: 0px 15px 15px 0px;
-        padding: 7% 5%;
-        
+        padding: 8% 5%;
         .fas{
             color: lighten($monochrome, 100%);
         }
@@ -80,23 +79,24 @@
         margin: 5% auto;
         @include card;
         @include shadow;
+        overflow: hidden;
     }
 }
 
 .section-menu{
-    article:hover{
-        
+   article:hover{    
+        .section-menu__text{
+            width: 100%;
+        }
         .section-menu__animation{
-                
+                transform: translateX(100%);
                 transform-origin:100%;
-                transform: scaleX(0);
-                transition: transform 500ms ease-in-out;
+                transition: transform 900ms ease-in-out;
 
-        
             .fas{
                 transform: rotate(180deg);
                 transition: transform 900ms;
             }
-        }
+        } 
     }
 }

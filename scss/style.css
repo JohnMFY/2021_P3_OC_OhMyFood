@@ -355,7 +355,7 @@ nav ul {
 }
 
 .section-menu__text span b {
-  width: 10%;
+  width: 5%;
   padding-left: 4%;
 }
 
@@ -374,7 +374,7 @@ nav ul {
       align-self: center;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  padding: 7% 5%;
+  padding: 8% 5%;
 }
 
 .section-menu__animation .fas {
@@ -398,17 +398,22 @@ nav ul {
   border-radius: 15px;
   -webkit-box-shadow: -2px 4px 10px #d9d9d9;
           box-shadow: -2px 4px 10px #d9d9d9;
+  overflow: hidden;
+}
+
+.section-menu article:hover .section-menu__text {
+  width: 100%;
 }
 
 .section-menu article:hover .section-menu__animation {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
   -webkit-transform-origin: 100%;
           transform-origin: 100%;
-  -webkit-transform: scaleX(0);
-          transform: scaleX(0);
-  -webkit-transition: -webkit-transform 500ms ease-in-out;
-  transition: -webkit-transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out;
-  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
+  -webkit-transition: -webkit-transform 900ms ease-in-out;
+  transition: -webkit-transform 900ms ease-in-out;
+  transition: transform 900ms ease-in-out;
+  transition: transform 900ms ease-in-out, -webkit-transform 900ms ease-in-out;
 }
 
 .section-menu article:hover .section-menu__animation .fas {
@@ -484,11 +489,11 @@ main h2, main h3 {
 }
 
 .section-menu h4 {
-  margin: 4% 0% 0% 0%;
-  width: 100%;
+  margin: 20px 0px 0px 0px;
+  width: 90%;
 }
 
 .section-menu p {
-  margin-top: 2%;
+  margin: 5px 0px;
 }
 /*# sourceMappingURL=style.css.map */
