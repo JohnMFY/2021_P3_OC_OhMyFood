@@ -335,7 +335,7 @@ nav ul {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   padding: 0% 4%;
-  width: 72%;
+  width: 100%;
 }
 
 .section-menu__text span {
@@ -375,6 +375,8 @@ nav ul {
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
   padding: 8% 5%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
 }
 
 .section-menu__animation .fas {
@@ -402,12 +404,12 @@ nav ul {
 }
 
 .section-menu article:hover .section-menu__text {
-  width: 100%;
+  width: 72%;
 }
 
 .section-menu article:hover .section-menu__animation {
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
   -webkit-transform-origin: 100%;
           transform-origin: 100%;
   -webkit-transition: -webkit-transform 900ms ease-in-out;
@@ -417,8 +419,8 @@ nav ul {
 }
 
 .section-menu article:hover .section-menu__animation .fas {
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
   -webkit-transition: -webkit-transform 900ms;
   transition: -webkit-transform 900ms;
   transition: transform 900ms;
