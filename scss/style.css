@@ -334,8 +334,8 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
-  padding: 0% 4%;
-  width: 100%;
+  padding: 0% 0% 0% 4%;
+  width: 85%;
 }
 
 .section-menu__text span {
@@ -355,12 +355,10 @@ nav ul {
 }
 
 .section-menu__text span b {
-  width: 5%;
-  padding-left: 4%;
+  margin: 0% 4%;
 }
 
 .section-menu__text p {
-  margin: 0%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -492,7 +490,6 @@ main h2, main h3 {
 
 .section-menu h4 {
   margin: 20px 0px 0px 0px;
-  width: 90%;
 }
 
 .section-menu p {

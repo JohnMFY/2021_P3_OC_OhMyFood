@@ -39,20 +39,19 @@
     &__text{
         display: flex;
         flex-flow: column nowrap;
-        padding: 0% 4%;
-        width: 100%;
+        padding: 0% 0% 0% 4%;
+        width: 85%;
         span{
             display: flex;
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
             b{
-                width: 5%;
-                padding-left: 4%;
+                margin: 0% 4%;
             }
         }
         p{
-            margin: 0%;
+
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
