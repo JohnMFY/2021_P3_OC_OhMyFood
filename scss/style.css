@@ -347,7 +347,7 @@ nav ul {
   width: 100%;
 }
 
-.section-menu__text span {
+.section-menu__text div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -504,14 +504,14 @@ main h2, main h3 {
   margin: 20px 0px 0px 0px;
 }
 
-.section-menu span p {
+.section-menu div p {
   margin: 5px 0px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-.section-menu span b {
+.section-menu div b {
   margin: 0% 4%;
 }
 /*# sourceMappingURL=style.css.map */
