@@ -43,8 +43,18 @@ main{
     h4{
         margin: 20px 0px 0px 0px;
     }
-    p{
-        margin: 5px 0px;
-    }
+    span{
+        
+        p{
+            margin: 5px 0px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        b{
+            margin: 0% 4%;
+        }
+    }    
 }
 

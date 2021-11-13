@@ -211,6 +211,15 @@ nav ul {
           flex-flow: column nowrap;
 }
 
+.section-restaurants article .far {
+  position: relative;
+  bottom: 100px;
+  left: 80%;
+  width: 5%;
+  margin: 0%;
+  padding: 2% 0%;
+}
+
 .section-restaurants article h4 {
   position: relative;
   bottom: 190px;
@@ -354,16 +363,6 @@ nav ul {
           justify-content: space-between;
 }
 
-.section-menu__text span b {
-  margin: 0% 4%;
-}
-
-.section-menu__text p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
 .section-menu__animation {
   width: 0%;
   display: -webkit-box;
@@ -412,19 +411,19 @@ nav ul {
           transform: translateX(0%);
   -webkit-transform-origin: 100%;
           transform-origin: 100%;
-  -webkit-transition: -webkit-transform 900ms ease-in-out;
-  transition: -webkit-transform 900ms ease-in-out;
-  transition: transform 900ms ease-in-out;
-  transition: transform 900ms ease-in-out, -webkit-transform 900ms ease-in-out;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 .section-menu article:hover .section-menu__animation .fas {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
-  -webkit-transition: -webkit-transform 900ms;
-  transition: -webkit-transform 900ms;
-  transition: transform 900ms;
-  transition: transform 900ms, -webkit-transform 900ms;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 
 body {
@@ -451,6 +450,17 @@ a:hover {
 
 li {
   list-style-type: none;
+}
+
+.far:hover {
+  display: inline-block;
+  font-weight: bold;
+  padding: 2% 0%;
+  background: -webkit-gradient(linear, left bottom, left top, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to top, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 body {
@@ -494,7 +504,14 @@ main h2, main h3 {
   margin: 20px 0px 0px 0px;
 }
 
-.section-menu p {
+.section-menu span p {
   margin: 5px 0px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section-menu span b {
+  margin: 0% 4%;
 }
 /*# sourceMappingURL=style.css.map */

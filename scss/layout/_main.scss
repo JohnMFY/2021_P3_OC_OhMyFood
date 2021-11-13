@@ -49,6 +49,15 @@ nav{
         display: flex;
         flex-flow: column nowrap;
 
+        .far{
+            position: relative;
+            bottom: 100px;
+            left: 80%;
+            width: 5%;
+            margin: 0%;
+            padding: 2% 0%;
+        }
+
         h4{
             position: relative;
             bottom: 190px; 

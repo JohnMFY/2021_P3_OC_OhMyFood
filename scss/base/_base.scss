@@ -16,3 +16,13 @@ a:hover{
 li{
     list-style-type: none;
 }
+
+.far:hover{
+    display: inline-block;
+    font-weight: bold;
+    padding: 2% 0%;
+    background:linear-gradient(to top, $secondary-color, $primary-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

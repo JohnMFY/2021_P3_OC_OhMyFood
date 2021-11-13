@@ -46,18 +46,9 @@
             flex-direction: row;
             align-items: baseline;
             justify-content: space-between;
-            b{
-                margin: 0% 4%;
-            }
         }
-        p{
-
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-
     }
+
     &__animation{
         width: 0%;
         display: flex;
@@ -82,10 +73,7 @@
         @include shadow;
         overflow: hidden;
     }
-}
-
-.section-menu{
-   article:hover{    
+    article:hover{    
         .section-menu__text{
             width: 72%;
         }
@@ -93,11 +81,11 @@
                 width: auto;
                 transform: translateX(0%);
                 transform-origin:100%;
-                transition: transform 900ms ease-in-out;
+                transition: transform 500ms ease-in-out;
 
             .fas{
                 transform: rotate(360deg);
-                transition: transform 900ms;
+                transition: transform 500ms ease-in-out;
             }
         } 
     }
