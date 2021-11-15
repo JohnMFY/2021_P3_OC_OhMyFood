@@ -1,3 +1,25 @@
+@-webkit-keyframes landing {
+  from {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes landing {
+  from {
+    -webkit-transform-origin: top;
+            transform-origin: top;
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .btn-primary {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -333,6 +355,8 @@ nav ul {
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
   width: 100%;
+  -webkit-animation: landing 2000ms ease-in;
+          animation: landing 2000ms ease-in;
 }
 
 .section-menu__text {

@@ -35,7 +35,8 @@
     display: flex;
     flex-flow: column nowrap;
     width: 100%;
-
+    animation: landing 2000ms ease-in;
+    
     &__text{
         display: flex;
         flex-flow: column nowrap;
