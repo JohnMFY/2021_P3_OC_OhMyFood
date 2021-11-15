@@ -92,8 +92,9 @@
     }
 }
 
-/*
-@media screen, (max-width:768px) {
+
+@media screen and (min-width:768px){
+
     .section-menu{
         flex-flow:row wrap;
         justify-content: space-around;
@@ -128,4 +129,3 @@
         }
     }
 }
-*/

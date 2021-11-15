@@ -455,43 +455,52 @@ nav ul {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
-/*
-@media screen, (max-width:768px) {
-    .section-menu{
-        flex-flow:row wrap;
+@media screen and (min-width: 768px) {
+  .section-menu {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -ms-flex-pack: distribute;
         justify-content: space-around;
-        section{
-            width: 25%;
-            article{
-            width: 100%;
-            margin: 10% auto;
-            }
-        }
-        
-    }
-    .btn-primary{
-        padding: 1% 5%;
-        margin: 5% auto;
-    }
-
-    footer{
-        h3{
-            width: 33%;
-            margin: 3% 33%;
-            display: flex;
-            justify-content: space-around;
-        }
-        ul{
-            display: flex;
+  }
+  .section-menu section {
+    width: 25%;
+  }
+  .section-menu section article {
+    width: 100%;
+    margin: 10% auto;
+  }
+  .btn-primary {
+    padding: 1% 5%;
+    margin: 5% auto;
+  }
+  footer h3 {
+    width: 33%;
+    margin: 3% 33%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  footer ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
             flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
             justify-content: space-between;
-            li{
-                width: 20%;
-            }
-        }
-    }
+  }
+  footer ul li {
+    width: 20%;
+  }
 }
-*/
+
 body {
   display: -webkit-box;
   display: -ms-flexbox;
