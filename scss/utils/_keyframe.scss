@@ -1,9 +1,11 @@
-@keyframes landing{
-    from{
+@keyframes landing{   
+    0%{
+        opacity: 0;
         transform-origin: top;
-        opacity: 0;     
     }
-    to{
+
+    100%{
         opacity: 1;
+        transform-origin: top;
     }
 }
