@@ -455,6 +455,43 @@ nav ul {
   transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
+/*
+@media screen, (max-width:768px) {
+    .section-menu{
+        flex-flow:row wrap;
+        justify-content: space-around;
+        section{
+            width: 25%;
+            article{
+            width: 100%;
+            margin: 10% auto;
+            }
+        }
+        
+    }
+    .btn-primary{
+        padding: 1% 5%;
+        margin: 5% auto;
+    }
+
+    footer{
+        h3{
+            width: 33%;
+            margin: 3% 33%;
+            display: flex;
+            justify-content: space-around;
+        }
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+            li{
+                width: 20%;
+            }
+        }
+    }
+}
+*/
 body {
   display: -webkit-box;
   display: -ms-flexbox;
