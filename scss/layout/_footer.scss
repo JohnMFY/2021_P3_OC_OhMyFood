@@ -11,7 +11,7 @@ footer{
         padding: 0%;
         margin: 0% 0% 5% 5%;
         li{
-            padding: 2% 0% 2% 0%;
+            padding: 2% 0%;
             .fas{
                 margin-right: 3%;
             }
@@ -20,4 +20,27 @@ footer{
             }            
         }
     }
-}  
+} 
+
+@media screen and (min-width:768px){
+    footer{
+        h3{
+            width: 33%;
+            margin: 3% 33%;
+            display: flex;
+            justify-content: space-around;
+        }
+        ul{
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-around;
+            margin: 0% 0% 3% 7%;          
+
+            li{
+                width: 20%;
+                padding: 1% 0%;
+
+            }
+        }
+    }
+}

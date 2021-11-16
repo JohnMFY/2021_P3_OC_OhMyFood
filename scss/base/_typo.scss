@@ -58,3 +58,12 @@ main{
     }    
 }
 
+@media screen and (min-width:768px){
+    .under-header-menu{
+        h2{
+            padding: 0% 2%;
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }   
+    }
+}
