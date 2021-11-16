@@ -73,8 +73,13 @@ main{
 @media screen and (min-width: 1080px){
 
     .under-header__city{
-         h4{
-             margin: 1% 0% 1% 0%;
-         }
-     }
+        h4{
+            margin: 1% 0% 1% 0%;
+        }
+    }
+    .section-restaurants{
+        h2{
+            margin: 3%;
+        } 
+    }
 } 

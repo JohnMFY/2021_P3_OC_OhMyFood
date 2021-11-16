@@ -65,6 +65,13 @@
           flex-flow: row nowrap;
 }
 
+.btn-primary:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ff93e1), to(#a16be0));
+  background-image: linear-gradient(to bottom, #ff93e1, #a16be0);
+  -webkit-box-shadow: -1px 2px 5px #404040;
+          box-shadow: -1px 2px 5px #404040;
+}
+
 .btn-primary:active {
   background-image: -webkit-gradient(linear, left top, right top, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to right, #FF79DA, #9356DC);
@@ -103,6 +110,11 @@
 .btn-secondary .fas {
   padding-right: 7%;
   color: gray;
+}
+
+.btn-secondary:hover {
+  -webkit-box-shadow: 0px 2px 4px gray;
+          box-shadow: 0px 2px 4px gray;
 }
 
 .btn-secondary:active {
@@ -300,7 +312,7 @@ nav ul {
 .section-restaurants article .far {
   position: relative;
   bottom: 100px;
-  left: 80%;
+  left: 85%;
   width: 5%;
   margin: 0%;
   padding: 2% 0%;
@@ -710,6 +722,9 @@ main h2, main h3 {
 @media screen and (min-width: 1080px) {
   .under-header__city h4 {
     margin: 1% 0% 1% 0%;
+  }
+  .section-restaurants h2 {
+    margin: 3%;
   }
 }
 /*# sourceMappingURL=style.css.map */
