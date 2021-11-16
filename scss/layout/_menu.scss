@@ -40,6 +40,7 @@
     &__text{
         display: flex;
         flex-flow: column nowrap;
+        justify-content: center;
         padding: 0% 0% 0% 4%;
         width: 100%;
         div{
@@ -56,7 +57,7 @@
         align-self: center;
         background-color: $tertiary-color;
         border-radius: 0px 15px 15px 0px;
-        padding: 8% 5%;
+        padding: 7% 5%;
         transform: translateX(100%);
         .fas{
             color: lighten($monochrome, 100%);
@@ -105,11 +106,18 @@
         flex-flow:row wrap;
         justify-content: space-around;
         section{
-            width: 25%;
+            width: 45%;
             article{
             width: 100%;
             margin: 10% auto;
             }
+        }    
+    }
+}
+@media screen and (min-width:1080px) {
+    .section-menu{
+        section{
+            width: 25%;
         }    
     }
 }

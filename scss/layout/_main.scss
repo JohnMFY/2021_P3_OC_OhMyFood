@@ -101,3 +101,67 @@ nav{
         }             
     }   
 }
+
+
+@media screen and (min-width:768px) {
+
+    nav{
+        h2{
+            padding: 5%;
+            text-align: center
+        }
+        ul{
+            padding: 0% 0% 2% 2%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            li{
+                width: 30%;
+            }
+        }
+        .btn-secondary{
+            span{
+                padding:2% 4%;
+            }
+        }
+    }
+
+    .section-restaurants{
+        flex-flow: row wrap;
+        padding: 0%;
+        h2{
+            width: 100%;
+            text-align: center;
+        }
+        article{
+            width: 50%;
+            .far{
+                padding: 2% 1%
+            }
+        }
+    }    
+}
+
+@media screen and (min-width: 1080px){
+    .under-header__city .fas{
+        padding-right: 1%;
+    }
+    nav{
+        h2{
+            padding: 2%;
+        }
+        .btn-secondary{
+            margin: 0%;
+            span{
+                padding:2% 3%;
+            }
+        }
+    }
+    .section-restaurants{
+        article{
+            width: 25%;
+        }
+    }
+    
+}

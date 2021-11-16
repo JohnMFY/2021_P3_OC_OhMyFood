@@ -41,12 +41,15 @@ main{
         text-transform: uppercase;
     }
     h4{
-        margin: 20px 0px 0px 0px;
+        margin: 1% 0% 0% 0%;
+        white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
     }
     div{
         
         p{
-            margin: 5px 0px;
+            margin: 1% 0%;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -67,3 +70,11 @@ main{
         }   
     }
 }
+@media screen and (min-width: 1080px){
+
+    .under-header__city{
+         h4{
+             margin: 1% 0% 1% 0%;
+         }
+     }
+} 

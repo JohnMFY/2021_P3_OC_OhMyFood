@@ -120,6 +120,13 @@
   }
 }
 
+@media screen and (min-width: 1080px) {
+  .btn-primary {
+    padding: 1% 5%;
+    margin: 2% auto;
+  }
+}
+
 footer {
   background-color: #333333;
 }
@@ -354,6 +361,66 @@ nav ul {
      object-fit: cover;
 }
 
+@media screen and (min-width: 768px) {
+  nav h2 {
+    padding: 5%;
+    text-align: center;
+  }
+  nav ul {
+    padding: 0% 0% 2% 2%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  nav ul li {
+    width: 30%;
+  }
+  nav .btn-secondary span {
+    padding: 2% 4%;
+  }
+  .section-restaurants {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    padding: 0%;
+  }
+  .section-restaurants h2 {
+    width: 100%;
+    text-align: center;
+  }
+  .section-restaurants article {
+    width: 50%;
+  }
+  .section-restaurants article .far {
+    padding: 2% 1%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .under-header__city .fas {
+    padding-right: 1%;
+  }
+  nav h2 {
+    padding: 2%;
+  }
+  nav .btn-secondary {
+    margin: 0%;
+  }
+  nav .btn-secondary span {
+    padding: 2% 3%;
+  }
+  .section-restaurants article {
+    width: 25%;
+  }
+}
+
 .main-menu {
   background: #fff6fd;
 }
@@ -423,6 +490,9 @@ nav ul {
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
           flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0% 0% 0% 4%;
   width: 100%;
 }
@@ -452,7 +522,7 @@ nav ul {
       align-self: center;
   background-color: #99E2D0;
   border-radius: 0px 15px 15px 0px;
-  padding: 8% 5%;
+  padding: 7% 5%;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
 }
@@ -523,11 +593,17 @@ nav ul {
         justify-content: space-around;
   }
   .section-menu section {
-    width: 25%;
+    width: 45%;
   }
   .section-menu section article {
     width: 100%;
     margin: 10% auto;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .section-menu section {
+    width: 25%;
   }
 }
 
@@ -606,11 +682,14 @@ main h2, main h3 {
 }
 
 .section-menu h4 {
-  margin: 20px 0px 0px 0px;
+  margin: 1% 0% 0% 0%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .section-menu div p {
-  margin: 5px 0px;
+  margin: 1% 0%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -625,6 +704,12 @@ main h2, main h3 {
     padding: 0% 2%;
     margin-top: 2%;
     margin-bottom: 2%;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .under-header__city h4 {
+    margin: 1% 0% 1% 0%;
   }
 }
 /*# sourceMappingURL=style.css.map */
