@@ -1,13 +1,15 @@
-@keyframes landing{   
-    0%{
+@keyframes loading {
+    to{
+        transform: rotate(1turn);
+    }
+}
+
+@keyframes landing{  
+
+    0%, 50%{
         opacity: 0;
         transform-origin: top;
-        transform: translateY(100px) ;
-    }
-
-    50%{
-        opacity: 0;
-        transform: translateY(50px);
+        transform: translateY(50px) ;
     }
 
     100%{

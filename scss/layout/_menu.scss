@@ -63,6 +63,16 @@
             color: lighten($monochrome, 100%);
         }
     }
+
+    &__entrees{
+        animation: landing 1000ms ease-in-out;
+    }
+    &__plats{
+        animation: landing 1500ms ease-in-out;
+    }
+    &__desserts{
+        animation: landing 2000ms ease-in-out;
+    }
     
     article{
         display: flex;
@@ -73,7 +83,6 @@
         @include card;
         @include shadow;
         overflow: hidden;
-        animation: landing 1000ms ease-in-out;
     }
     article:hover{    
         .section-menu__text{
