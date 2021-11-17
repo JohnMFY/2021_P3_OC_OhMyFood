@@ -46,6 +46,28 @@
   }
 }
 
+@-webkit-keyframes filling {
+  from {
+    -webkit-transform: scale3d(0.2, 0.2, 1);
+            transform: scale3d(0.2, 0.2, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
+@keyframes filling {
+  from {
+    -webkit-transform: scale3d(0.2, 0.2, 1);
+            transform: scale3d(0.2, 0.2, 1);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+
 .btn-primary {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -692,6 +714,9 @@ li {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  overflow: hidden;
+  -webkit-animation: filling 1000ms ease-in-out;
+          animation: filling 1000ms ease-in-out;
 }
 
 body {

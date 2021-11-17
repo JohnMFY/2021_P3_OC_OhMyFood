@@ -25,4 +25,6 @@ li{
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    overflow: hidden;
+    animation: filling 1000ms ease-in-out;
 }

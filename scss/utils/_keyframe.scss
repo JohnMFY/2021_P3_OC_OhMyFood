@@ -18,3 +18,13 @@
         transform: translateY(0);
     }
 }
+
+@keyframes filling{
+    from {
+		transform: scale3d(0.2, 0.2, 1);
+	}
+    to{
+		transform: scale3d(1, 1, 1);
+    }
+}
+
