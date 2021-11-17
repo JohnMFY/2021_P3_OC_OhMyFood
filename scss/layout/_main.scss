@@ -1,17 +1,19 @@
-.loading{
-    display: flex;
-    justify-content: center;
-    height: 100%;
-}
 
-.loading::after{
-    content: none;
-    width: 100px;
-    height: 100px;
-    border: 20px solid lighten($secondary-color, 24);
-    border-top: solid 20px $primary-color;
-    border-radius: 50%;
-    animation: loading 1000ms linear;
+.loading{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: lighten($monochrome, 50%);
+    &__animation{
+        width: 100px;
+        height: 100px;
+        border: 20px solid lighten($secondary-color, 24);
+        border-top: solid 20px $primary-color;
+        border-radius: 50%;
+        animation: loading 1000ms linear infinite;
+    }
 }
 
 
@@ -69,10 +71,11 @@ nav{
         .far{
             position: relative;
             bottom: 100px;
-            left: 85%;
+            left: 80%;
             width: 5%;
             margin: 0%;
-            padding: 2% 0%;
+            padding: 2px;
+            
         }
         h4{
             position: relative;
@@ -80,7 +83,7 @@ nav{
             color: darken($tertiary-color, 40%);
             background-color: $tertiary-color;
             width: 20%;
-            padding: 2%;
+            padding: 3%;
             margin: auto;
             text-align: center;
         }
@@ -152,9 +155,7 @@ nav{
         }
         article{
             width: 50%;
-            .far{
-                padding: 2% 1%
-            }
+
         }
     }    
 }
