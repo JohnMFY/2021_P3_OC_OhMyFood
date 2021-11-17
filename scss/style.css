@@ -528,6 +528,11 @@ nav ul {
   top: -30px;
 }
 
+.under-header-menu figure figcaption .far {
+  margin: 0%;
+  padding: 2px;
+}
+
 .section-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -776,8 +781,7 @@ main h2, main h3 {
 @media screen and (min-width: 768px) {
   .under-header-menu h2 {
     padding: 0% 2%;
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin: 2% 0% 0% 0%;
   }
 }
 
