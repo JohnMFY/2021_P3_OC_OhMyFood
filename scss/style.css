@@ -68,6 +68,42 @@
   }
 }
 
+@-webkit-keyframes out {
+  0%, 95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes out {
+  0%, 95% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes in {
+  0%, 95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes in {
+  0%, 95% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .btn-primary {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#FF79DA), to(#9356DC));
   background-image: linear-gradient(to bottom, #FF79DA, #9356DC);
@@ -250,26 +286,36 @@ header h1 {
 }
 
 .loading {
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
   width: 100%;
   height: 100%;
   background-color: gray;
+  -webkit-animation: out 2400ms forwards ease-in-out;
+          animation: out 2400ms forwards ease-in-out;
 }
 
 .loading__animation {
   width: 100px;
   height: 100px;
-  border: 20px solid #fff3fc;
-  border-top: solid 20px #9356DC;
+  border: 10px solid #fff3fc;
+  border-top: solid 10px #9356DC;
   border-radius: 50%;
-  -webkit-animation: loading 1000ms linear infinite;
-          animation: loading 1000ms linear infinite;
+  -webkit-animation: loading 800ms linear infinite;
+          animation: loading 800ms linear infinite;
+}
+
+.content {
+  -webkit-animation: in 2400ms ease-in-out;
+          animation: in 2400ms ease-in-out;
 }
 
 .under-header {
