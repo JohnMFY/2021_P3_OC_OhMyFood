@@ -16,6 +16,7 @@
         border-top: solid 10px $primary-color;
         border-radius: 50%;
         animation: loading 800ms linear infinite;
+        z-index: 2;
     }
 }
 
