@@ -8,7 +8,7 @@
     height: 100%;
     background-color: lighten($monochrome, 50%);
     animation: out 2400ms forwards ease-in-out;
-    z-index: 2;
+    z-index: 10;
     &__animation{
         width: 100px;
         height: 100px;
@@ -16,7 +16,7 @@
         border-top: solid 10px $primary-color;
         border-radius: 50%;
         animation: loading 800ms linear infinite;
-        z-index: 2;
+        z-index: 10;
     }
 }
 
